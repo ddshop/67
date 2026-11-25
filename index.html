@@ -53,9 +53,9 @@ main{width:min(100%,540px);margin:0 auto;padding:0 0 38px;text-align:center}.mac
 </main><script>
 // ===== 折扣碼與網址：沿用之前 HTML 的設定 =====
 const coupons = {
-  rose: {code:'GU6NPEBDM',url:'https://s.shopee.tw/3LSVByZYB7'},
-  gold: {code:'93NZRZQTG',url:'https://s.shopee.tw/3LSVByZYB7'},
-  mint: {code:'GU6NPEBDM',url:'https://s.shopee.tw/3LSVByZYB7'},
+  rose: {code:'7FFG2DBNE',url:'https://s.shopee.tw/6AmrpONJGv'},
+  gold: {code:'M8TRK66XL',url:'https://s.shopee.tw/6AmrpONJGv'},
+  mint: {code:'49SPNVHDF',url:'https://s.shopee.tw/6AmrpONJGv'},
   blue: null // 空蛋，不會複製或跳轉
 };
 // ===== 在這裡改秒數：1000 = 1 秒 =====
@@ -95,7 +95,7 @@ function choose(ball){
   revealTimer=setTimeout(async()=>{
     if(!active())return;
     machine.classList.remove('opening','shaking','animating');machine.classList.add('revealed');
-    if(!reward){setMessage('這顆是空蛋！','沒抽中，再選另一顆扭蛋試試手氣。','再接再厲');return}
+    if(!reward){setMessage('笑死!這顆是空蛋！','沒抽中，再選另一顆扭蛋試試手氣。','再接再厲');return}
     if(!target){setMessage('這顆暫時無法領券','折扣碼或蝦皮網址尚未設定完成。','未開放');return}
     const copied=await copiedPromise;if(!active())return;
     if(!copied){setMessage('抽中折扣碼，但複製失敗','請再按一次，建議用 Safari 或 Chrome 開啟。','重試一次');return}
